@@ -1,0 +1,103 @@
+/* @import '~antd/dist/antd.css'; */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  letter-spacing: -0.01em;
+  word-spacing: 0.2em;
+}
+.login-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -103px;
+  width: 300px;
+}
+.login-wrapper .login-form {
+  max-width: 300px;
+}
+.login-wrapper .login-form-forgot {
+  float: right;
+}
+.login-wrapper .login-form-button {
+  width: 100%;
+}
+.card-container {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 30px;
+  background: #dcd3b2;
+  width: 80%;
+  border: 2px solid #dcd3b2;
+}
+.card-container > .ant-tabs-card > .ant-tabs-content {
+  margin-top: -16px;
+}
+.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+  padding: 16px;
+  min-height: 300px;
+  background: #fff;
+}
+.card-container > .ant-tabs-card > .ant-tabs-bar {
+  border-color: #fff;
+}
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+.classify-wrap {
+  margin: 20px 0;
+}
+.ql-editor {
+  min-height: 500px;
+}
+/* article */
+.main-body {
+  padding: 0 8%;
+}
+.main-body h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+.main-body p {
+  text-align:justify;
+}
+.main-body ul, .main-body ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: li;
+}
+.main-body li {
+  position: relative;
+}
+.main-body li:not(.ql-indent-1)::before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -25px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #e6f7ff;
+  color: #1890ff;
+  text-align: center;
+  line-height: 20px;
+}
+.main-body li.ql-indent-1::before {
+  content: 'Δ';
+  color: #1890ff;
+  padding-right: 5px;
+}
+
+@media (min-width: 768) {
+  .slider-menu {
+    display: none
+  }
+}

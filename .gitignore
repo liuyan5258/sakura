@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+
+package-lock.json
+/server/package-lock.json
+yarn.lock
