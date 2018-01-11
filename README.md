@@ -29,8 +29,12 @@ sudo node run.js
 npm start
 ```  
 
+## 相关笔记  
+
+[全栈开发之服务器登录和配置](https://liuyan5258.github.io/2018/01/11/nodejs-deploy/)  
+
 ## Todo ✍️  
 
-- [ ] 服务器配置  
+- [x] 服务器配置  
 - [ ] 配置生产环境  
 
